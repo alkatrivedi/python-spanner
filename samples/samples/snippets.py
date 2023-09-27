@@ -1302,7 +1302,16 @@ def insert_data_with_dml(instance_id, database_id):
     def insert_singers(transaction):
         row_ct = transaction.execute_update(
             "INSERT INTO Singers (SingerId, FirstName, LastName) "
-            " VALUES (10, 'Virginia', 'Watson')"
+            " VALUES (1, 'Melissa', 'Garcia'),"
+            " VALUES (2, 'Russell', 'Morales'),"
+            " VALUES (3, 'Marc', 'Richards'),"
+            " VALUES (4, 'Catalina', 'Smith'),"
+            " VALUES (5, 'Alice', 'Trentor'),"
+            " VALUES (6, 'Lea', 'Martin'),"
+            " VALUES (7, 'David', 'Lomond'),"
+            " VALUES (8, 'Virginia', 'Watson'),"
+            " VALUES (9, 'Jacqueline', 'Long'),"
+            " VALUES (10, 'Dylan', 'Shaw')"
         )
 
         print("{} record(s) inserted.".format(row_ct))
@@ -1547,10 +1556,16 @@ def insert_with_dml(instance_id, database_id):
     def insert_singers(transaction):
         row_ct = transaction.execute_update(
             "INSERT INTO Singers (SingerId, FirstName, LastName) VALUES "
-            "(12, 'Melissa', 'Garcia'), "
-            "(13, 'Russell', 'Morales'), "
-            "(14, 'Jacqueline', 'Long'), "
-            "(15, 'Dylan', 'Shaw')"
+            " (1, 'Melissa', 'Garcia'),"
+            " (2, 'Russell', 'Morales'),"
+            " (3, 'Marc', 'Richards'),"
+            " (4, 'Catalina', 'Smith'),"
+            " (5, 'Alice', 'Trentor'),"
+            " (6, 'Lea', 'Martin'),"
+            " (7, 'David', 'Lomond'),"
+            " (8, 'Virginia', 'Watson'),"
+            " (9, 'Jacqueline', 'Long'),"
+            " (10, 'Dylan', 'Shaw')"
         )
         print("{} record(s) inserted.".format(row_ct))
 

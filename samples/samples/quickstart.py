@@ -45,4 +45,4 @@ def run_quickstart(instance_id, database_id):
 
 
 if __name__ == "__main__":
-    run_quickstart()
+    run_quickstart('alkatrivedi', 'alkadb')
